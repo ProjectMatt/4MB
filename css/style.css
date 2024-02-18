@@ -1,0 +1,211 @@
+/* General Layout */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    font-family: 'Lato', sans-serif; /* Lato font */
+    background-color: #f8f8f8; /* Greyish-white background */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: #fff; 
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+}
+
+.logo {
+    height: 90px; 
+    width: auto;
+    position: absolute;
+    top: 10px;
+    left: 3px;
+}
+@media screen and (max-width: 600px) {
+    .logo {
+        position: static; /* Resets the position */
+        display: block; /* Ensures the logo takes its own line */
+        margin: 0 auto; /* Centers the logo */
+        height: 170px; /* Increased height for mobile */
+    }
+
+    header {
+        text-align: center; /* Center the header content */
+    }
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    font-weight: bold;
+
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+    font-weight: bold;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+    font-weight: bold;
+}
+nav ul li, nav ul li a {
+    font-weight: bold;
+}
+
+
+nav ul li a:hover {
+    color: #007bff;
+    font-weight: bold;
+
+}
+
+/* Main Content */
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+section {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
+    color: #666;
+}
+
+footer a {
+    color: inherit;
+}
+
+/* Contact Form */
+#contact-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#contact-form input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#contact-form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Services Section */
+.service {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.service-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.service-description {
+    flex-grow: 1;
+}
+.reviews {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.review {
+    width: 30%;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.review:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    text-align: center;
+}
+
+.logo img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.details {
+    margin-top: 10px;
+}
+
+.details h3 {
+    margin: 5px 0;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.details p.feedback {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+}
